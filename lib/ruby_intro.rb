@@ -30,11 +30,16 @@ end
 
 def starts_with_consonant?(string)
   # YOUR CODE HERE
-  
+  vowels = ["a", "e", "i", "o", "u"]
+  first = string.downcase[0]
+  ("a".."z").include?(first) && !vowels.include?(first)
 end
 
 def binary_multiple_of_4?(string)
   # YOUR CODE HERE
+  return false unless string.match?(/\A[01]+\z/)
+  num = string.to_i(2)
+  num % 4 == 0
 end
 
 # Part 3
