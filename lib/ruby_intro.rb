@@ -18,12 +18,14 @@ end
 
 def sum_to_n?(arr, number)
   # YOUR CODE HERE
+  arr.combination(2).any? { |a, b| a + b == number}
 end
 
 # Part 2
 
 def hello(name)
   # YOUR CODE HERE
+  
 end
 
 def starts_with_consonant?(string)
